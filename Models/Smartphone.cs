@@ -29,7 +29,7 @@ namespace projeto_poo_incrementado.Models
 
         public void Ligar()
         {
-            Console.WriteLine("Ligando Smartphone...");
+            Console.WriteLine("Ligando smartphone...");
         }
 
         public void fazerLigacao()
