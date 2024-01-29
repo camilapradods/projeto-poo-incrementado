@@ -1,0 +1,14 @@
+C:\Projetos\projeto-poo-incrementado\bin\Debug\net8.0\projeto-poo-incrementado.exe
+C:\Projetos\projeto-poo-incrementado\bin\Debug\net8.0\projeto-poo-incrementado.deps.json
+C:\Projetos\projeto-poo-incrementado\bin\Debug\net8.0\projeto-poo-incrementado.runtimeconfig.json
+C:\Projetos\projeto-poo-incrementado\bin\Debug\net8.0\projeto-poo-incrementado.dll
+C:\Projetos\projeto-poo-incrementado\bin\Debug\net8.0\projeto-poo-incrementado.pdb
+C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\projeto-poo-incrementado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\projeto-poo-incrementado.AssemblyInfoInputs.cache
+C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\projeto-poo-incrementado.AssemblyInfo.cs
+C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\projeto-poo-incrementado.csproj.CoreCompileInputs.cache
+C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\projeto-poo-incrementado.dll
+C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\refint\projeto-poo-incrementado.dll
+C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\projeto-poo-incrementado.pdb
+C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\projeto-poo-incrementado.genruntimeconfig.cache
+C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\ref\projeto-poo-incrementado.dll
