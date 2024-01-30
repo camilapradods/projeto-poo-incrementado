@@ -81,76 +81,72 @@ while (exibirMenu){
         case "2":
 
             Console.WriteLine("Digite o numero");
-                string num1 = Console.ReadLine();
-                Console.WriteLine("Digite o modelo");
-                string mod1 = Console.ReadLine();
-                Console.WriteLine("Digite o IMEI");
-                string IM1 = Console.ReadLine();
-                Console.WriteLine("Digite a memoria");
-                int mem1 = Convert.ToInt32(Console.ReadLine());
+            string num1 = Console.ReadLine();
+            Console.WriteLine("Digite o modelo");
+            string mod1 = Console.ReadLine();
+            Console.WriteLine("Digite o IMEI");
+            string IM1 = Console.ReadLine();
+            Console.WriteLine("Digite a memoria");
+            int mem1 = Convert.ToInt32(Console.ReadLine());
                 
-                var iphone1 = new Iphone(numero: num1, modelo: mod1, IMEI2: IM1, memoria: mem1);
+            var iphone1 = new Iphone(numero: num1, modelo: mod1, IMEI2: IM1, memoria: mem1);
             
-                Console.WriteLine($"Seu smartphone: Nokia, numero: {num1}, modelo: {mod1}, IMEI: {IM1}, memoria: {mem1}");
+            Console.WriteLine($"Seu smartphone: Iphone, numero: {num1}, modelo: {mod1}, IMEI: {IM1}, memoria: {mem1}");
 
                     
-                    Console.WriteLine("Digite 0 para ligar o telefone:");
+            Console.WriteLine("Digite 'Ligar' para iniciar o telefone:");;
                     
-                    int z = Convert.ToInt32(Console.ReadLine());
-                   
-
-                          
-                                    if(z == 0)
-                                    {
-                                        iphone1.Ligar();
+            var ligarIphone = Console.ReadLine().ToUpper();
+    
+            if(ligarIphone.Equals("LIGAR"))
+            {
+                iphone1.Ligar();
+                
+                bool funcionando = true;
+                while(funcionando)
+                {
                                         
-                                        bool w = true;
-                                        while(w)
-                                        {
-                                        
-                                        Console.WriteLine("Escolha o que voce deseja fazer:");
-                                        Console.WriteLine("Digite 1 - Fazer ligacao");
-                                        Console.WriteLine("Digite 2 - Instalar aplicativo");
-                                        Console.WriteLine("Digite 3 - Encerrar");
+                Console.WriteLine("Escolha o que voce deseja fazer:");
+                Console.WriteLine("Digite 'ligacao' para fazer um ligacao");
+                Console.WriteLine("Digite 'instalar' para instalar um aplicativo");
+                Console.WriteLine("Digite 'desligar' para desligar o smartphone");
 
-                                        int y = Convert.ToInt32(Console.ReadLine());
 
-                                            if (y == 1){
-                                                iphone1.fazerLigacao();
-                                            }
-                                            else if(y == 2){
-                                                Console.WriteLine("Digite o nome do aplicativo");
-                                                string app = Console.ReadLine();
-                                                iphone1.InstalarAplicativo(app);
-                                            }
-                                            else if(y == 3){
-                                                Console.WriteLine("Retornando ao menu principal...");
-                                                w = false;
-                                            }
-                                            else{
-                                                Console.WriteLine("Opcao invalida \n");
-                                            }
-                                        }
-                                
-                                    }
+                var funcionalidades = Console.ReadLine().ToUpper();
 
-                                    else 
-                                    {
-                                    Console.WriteLine("Seu smartphone permanece desligado");
-                                    }
+                    if (funcionalidades.Equals("LIGACAO")){
+                        iphone1.fazerLigacao();
+                    }
+                    else if(funcionalidades.Equals("INSTALAR")){
+                        Console.WriteLine("Digite o nome do aplicativo");
+                        string app = Console.ReadLine();
+                        iphone1.InstalarAplicativo(app);
+                    }
+                    else if(funcionalidades.Equals("DESLIGAR")){
+                        Console.WriteLine("Desligando seu smartphone... \n");
+                        funcionando = false;
+                    }
+                    else{
+                        Console.WriteLine("Opcao invalida");
+                    }
+                }
+        
+            }
+
+            else 
+            {
+            Console.WriteLine("Seu smartphone permanece desligado");
+            }
             
             break;
 
         case "3":
-            Console.WriteLine("Programa encerrado!");
+            Console.WriteLine("Programa encerrado! \n");
             exibirMenu = false;
             break;            
 
         default:
-            Console.WriteLine("Opção inválida");
+            Console.WriteLine("Opção inválida \n");
             break;
     }
-
-
-
 }
