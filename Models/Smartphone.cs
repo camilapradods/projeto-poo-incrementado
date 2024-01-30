@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace projeto_poo_incrementado.Models
 {
@@ -29,12 +25,12 @@ namespace projeto_poo_incrementado.Models
 
         public void Ligar()
         {
-            Console.WriteLine("Ligando smartphone...");
+            Console.WriteLine("Ligando smartphone... \n");
         }
 
         public void fazerLigacao()
         {
-            Console.WriteLine("Fazendo ligação...");
+            Console.WriteLine("Fazendo ligação... \n");
         }
 
         public abstract void InstalarAplicativo(string nomeApp);

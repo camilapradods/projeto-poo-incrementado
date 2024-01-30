@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace projeto_poo_incrementado.Models
 {
@@ -19,7 +15,7 @@ namespace projeto_poo_incrementado.Models
         // FEITO!!
         public override void InstalarAplicativo(string nomeApp)
         {
-            Console.WriteLine($"Instalando app {nomeApp} no Nokia...");
+            Console.WriteLine($"Instalando app {nomeApp} no Nokia... \n");
 
         }
 

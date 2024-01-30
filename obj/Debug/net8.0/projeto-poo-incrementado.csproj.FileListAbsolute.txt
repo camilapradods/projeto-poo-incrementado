@@ -12,3 +12,4 @@ C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\refint\projeto-poo-increme
 C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\projeto-poo-incrementado.pdb
 C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\projeto-poo-incrementado.genruntimeconfig.cache
 C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\ref\projeto-poo-incrementado.dll
+C:\Projetos\projeto-poo-incrementado\obj\Debug\net8.0\projeto-poo-incrementado.sourcelink.json

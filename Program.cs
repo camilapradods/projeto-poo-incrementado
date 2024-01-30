@@ -18,66 +18,64 @@ while (exibirMenu){
 
         case "1":
                 
-                Console.WriteLine("Digite o numero");
-                string num = Console.ReadLine();
-                Console.WriteLine("Digite o modelo");
-                string mod = Console.ReadLine();
-                Console.WriteLine("Digite o IMEI");
-                string IM = Console.ReadLine();
-                Console.WriteLine("Digite a memoria");
-                int mem = Convert.ToInt32(Console.ReadLine());
-                
-                Smartphone nokia1 = new Nokia(numero: num, modelo: mod, IMEI2: IM, memoria: mem);
+            Console.WriteLine("Digite o numero");
+            string num = Console.ReadLine();
+            Console.WriteLine("Digite o modelo");
+            string mod = Console.ReadLine();
+            Console.WriteLine("Digite o IMEI");
+            string IM = Console.ReadLine();
+            Console.WriteLine("Digite a memoria");
+            int mem = Convert.ToInt32(Console.ReadLine());
             
-                Console.WriteLine($"Seu smartphone: Nokia, numero: {num}, modelo: {mod}, IMEI: {IM}, memoria: {mem}");
+            var nokia1 = new Nokia(numero: num, modelo: mod, IMEI2: IM, memoria: mem);
+        
+            Console.WriteLine($"Seu smartphone: Nokia, numero: {num}, modelo: {mod}, IMEI: {IM}, memoria: {mem} \n");
+            
 
-                    
-                    Console.WriteLine("Digite 0 para ligar o telefone:");
-                    
-                    int x = Convert.ToInt32(Console.ReadLine());
-                   
+            Console.WriteLine("Digite 'Ligar' para iniciar o telefone:");
+            
+            var ligarNokia = Console.ReadLine().ToUpper();
+    
+            if(ligarNokia.Equals("LIGAR"))
+            {
+                nokia1.Ligar();
+                
+                bool funcionando = true;
+                while(funcionando)
+                {
+                
+                Console.WriteLine("Escolha o que voce deseja fazer:");
+                Console.WriteLine("Digite 'ligacao' para fazer um ligacao");
+                Console.WriteLine("Digite 'instalar' para instalar um aplicativo");
+                Console.WriteLine("Digite 'desligar' para desligar o smartphone");
 
-                          
-                                    if(x == 0)
-                                    {
-                                        nokia1.Ligar();
-                                        
-                                        bool w = true;
-                                        while(w)
-                                        {
-                                        
-                                        Console.WriteLine("Escolha o que voce deseja fazer:");
-                                        Console.WriteLine("Digite 1 - Fazer ligacao");
-                                        Console.WriteLine("Digite 2 - Instalar aplicativo");
-                                        Console.WriteLine("Digite 3 - Encerrar");
+                var funcionalidades = Console.ReadLine().ToUpper();
 
-                                        int y = Convert.ToInt32(Console.ReadLine());
+                    if (funcionalidades.Equals("LIGACAO")){
+                        nokia1.fazerLigacao();
+                    }
+                    else if(funcionalidades.Equals("INSTALAR")){
+                        Console.WriteLine("Digite o nome do aplicativo");
+                        string app = Console.ReadLine();
+                        nokia1.InstalarAplicativo(app);
+                    }
+                    else if(funcionalidades.Equals("DESLIGAR")){
+                        Console.WriteLine("Desligando seu smartphone... \n");
+                        funcionando = false;
+                    }
+                    else{
+                        Console.WriteLine("Opcao invalida");
+                    }
+                }
+        
+            }
 
-                                            if (y == 1){
-                                                nokia1.fazerLigacao();
-                                            }
-                                            else if(y == 2){
-                                                Console.WriteLine("Digite o nome do aplicativo");
-                                                string app = Console.ReadLine();
-                                                nokia1.InstalarAplicativo(app);
-                                            }
-                                            else if(y == 3){
-                                                Console.WriteLine("Retornando ao menu principal...");
-                                                w = false;
-                                            }
-                                            else{
-                                                Console.WriteLine("Opcao invalida");
-                                            }
-                                        }
-                                
-                                    }
-
-                                    else 
-                                    {
-                                    Console.WriteLine("Seu smartphone permanece desligado");
-                                    }
-                    
-                            
+            else 
+            {
+            Console.WriteLine("Seu smartphone permanece desligado");
+            }
+                
+                        
             break;
 
         case "2":
@@ -91,7 +89,7 @@ while (exibirMenu){
                 Console.WriteLine("Digite a memoria");
                 int mem1 = Convert.ToInt32(Console.ReadLine());
                 
-                Smartphone iphone1 = new Iphone(numero: num1, modelo: mod1, IMEI2: IM1, memoria: mem1);
+                var iphone1 = new Iphone(numero: num1, modelo: mod1, IMEI2: IM1, memoria: mem1);
             
                 Console.WriteLine($"Seu smartphone: Nokia, numero: {num1}, modelo: {mod1}, IMEI: {IM1}, memoria: {mem1}");
 
@@ -130,7 +128,7 @@ while (exibirMenu){
                                                 w = false;
                                             }
                                             else{
-                                                Console.WriteLine("Opcao invalida");
+                                                Console.WriteLine("Opcao invalida \n");
                                             }
                                         }
                                 
